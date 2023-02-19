@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Admins Page</title>
+<meta charset="UTF-8">
+<title>QR Code Generator</title>
 </head>
 <body>
-	<div>
-		<h1>Welcome Admin</h1>
-	</div>
-
+	<h1>QR Code Generator</h1>
+	<form method="post" action="GenerateQRServlet">
+		<label for="qrData">Enter QR data:</label> <input type="text"
+			name="qrData" id="qrData">
+		<button type="submit">Generate QR Code</button>
+	</form>
 </body>
 </html>
